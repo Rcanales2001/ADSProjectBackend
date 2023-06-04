@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 //IOC Services
-builder.Services.AddTransient<IEstudianteRepositorio, EstudianteRepositorio>();
-builder.Services.AddTransient<ICarreraRepositorio, CarreraRepositorio>();
-builder.Services.AddTransient<IMateriaRepositorio, MateriaRepositorio>();
-builder.Services.AddTransient<IProfesorRepositorio, ProfesorRepositorio>();
-builder.Services.AddTransient<IGrupoRepositorio, GrupoRepositorio>();
+builder.Services.AddScoped<IEstudianteRepositorio, EstudianteRepositorio>();
+builder.Services.AddScoped<ICarreraRepositorio, CarreraRepositorio>();
+builder.Services.AddScoped<IMateriaRepositorio, MateriaRepositorio>();
+builder.Services.AddScoped<IProfesorRepositorio, ProfesorRepositorio>();
+builder.Services.AddScoped<IGrupoRepositorio, GrupoRepositorio>();
 
 //DBServices
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
