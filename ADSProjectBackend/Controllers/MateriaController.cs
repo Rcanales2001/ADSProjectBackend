@@ -18,7 +18,6 @@ namespace ADSProjectBackend.Controllers
             this.materiaRepositorio = materiaRepositorio;
         }
 
-        // POST api/<MateriaController>
         [HttpPost("insertarMateria")]
         public ActionResult<int> InsertarMateria(Materia value)
         {
@@ -34,7 +33,6 @@ namespace ADSProjectBackend.Controllers
         }
 
 
-        // GET: api/<MateriaController>
         [HttpGet("obtenerListaMaterias")]
         public ActionResult<List<Materia>> ObtenerMaterias()
         {
@@ -49,7 +47,6 @@ namespace ADSProjectBackend.Controllers
             }
         }
 
-        // GET: api/<MateriaController>
         [HttpGet("obtenerMateria/")]
         public ActionResult<Materia> ObtenerMateriaPorId(int id)
         {

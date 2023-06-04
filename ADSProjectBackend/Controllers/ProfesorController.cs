@@ -19,7 +19,6 @@ namespace ADSProjectBackend.Controllers
             this.profesorRepositorio = profesorRepositorio;
         }
 
-        // POST api/<ProfesorController>
         [HttpPost("insertarProfesor")]
         public ActionResult<int> InsertarProfesor(Profesor value)
         {
@@ -36,7 +35,6 @@ namespace ADSProjectBackend.Controllers
         }
 
 
-        // GET: api/<ProfesorController>
         [HttpGet("obtenerListaProfesores")]
         public ActionResult<List<Profesor>> ObtenerProfesors()
         {
@@ -51,7 +49,6 @@ namespace ADSProjectBackend.Controllers
             }
         }
 
-        // GET: api/<ProfesorController>
         [HttpGet("obtenerProfesor/")]
         public ActionResult<Profesor> ObtenerProfesorPorId(int id)
         {

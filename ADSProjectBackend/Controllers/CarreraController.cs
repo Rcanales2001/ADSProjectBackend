@@ -3,7 +3,6 @@ using ADSProjectBackend.Repositories.Interfaces;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ADSProjectBackend.Controllers
 {
@@ -19,7 +18,6 @@ namespace ADSProjectBackend.Controllers
             this.carreraRepositorio = carreraRepositorio;
         }
 
-        // POST api/<CarreraController>
         [HttpPost("insertarCarrera")]
         public ActionResult<int> InsertarCarrera(Carrera value)
         {
@@ -35,7 +33,6 @@ namespace ADSProjectBackend.Controllers
         }
 
 
-        // GET: api/<CarreraController>
         [HttpGet("obtenerListaCarreras")]
         public ActionResult<List<Carrera>> ObtenerCarreras()
         {
@@ -50,7 +47,6 @@ namespace ADSProjectBackend.Controllers
             }
         }
 
-        // GET: api/<CarreraController>
         [HttpGet("obtenerCarrera/")]
         public ActionResult<Carrera> ObtenerCarreraPorId(int id)
         {

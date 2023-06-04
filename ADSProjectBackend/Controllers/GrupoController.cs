@@ -18,7 +18,6 @@ namespace ADSProjectBackend.Controllers
             this.grupoRepositorio = pGrupoRepositorio;
         }
 
-        // POST api/<GrupoController>
         [HttpPost("insertarGrupo")]
         public ActionResult<int> InsertarGrupo(Grupo value)
         {
@@ -34,7 +33,6 @@ namespace ADSProjectBackend.Controllers
         }
 
 
-        // GET: api/<GrupoController>
         [HttpGet("obtenerListaGrupos")]
         public ActionResult<List<Grupo>> ObtenerGrupos()
         {
@@ -49,7 +47,6 @@ namespace ADSProjectBackend.Controllers
             }
         }
 
-        // GET: api/<GrupoController>
         [HttpGet("obtenerGrupo/")]
         public ActionResult<Grupo> ObtenerGrupoPorId(int id)
         {

@@ -3,7 +3,6 @@ using ADSProjectBackend.Repositories.Interfaces;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ADSProjectBackend.Controllers
 {
@@ -35,7 +34,6 @@ namespace ADSProjectBackend.Controllers
         }
 
 
-        // GET: api/<EstudianteController>
         [HttpGet("obtenerListaEstudiantes")]
         public ActionResult<List<Estudiante>> ObtenerEstudiantes()
         {
@@ -50,7 +48,6 @@ namespace ADSProjectBackend.Controllers
             }
         }
 
-        // GET: api/<EstudianteController>
         [HttpGet("obtenerEstudiante/")]
         public ActionResult<Estudiante> ObtenerEstudiantePorId(int id)
         {

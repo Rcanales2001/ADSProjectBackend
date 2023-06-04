@@ -10,7 +10,6 @@ namespace ADSProjectBackend.DBContext
 
         }
 
-        //Con un DbSet se indica a EFC cuales tables quiero en la base de datos
 
         public DbSet<Estudiante> Estudiantes { get; set; }
         public DbSet<Carrera> Carreras { get; set; }
